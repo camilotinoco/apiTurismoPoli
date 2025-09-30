@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_perfil" android:title="Perfil" android:icon="@android:drawable/ic_menu_myplaces" />
+    <item android:id="@+id/nav_recomendaciones" android:title="Recomendaciones" android:icon="@android:drawable/ic_menu_info_details" />
+    <item android:id="@+id/nav_reservas" android:title="Reservas" android:icon="@android:drawable/ic_menu_agenda" />
+    <item android:id="@+id/nav_itinerario" android:title="Itinerario" android:icon="@android:drawable/ic_menu_mapmode" />
+    <item android:id="@+id/nav_lugares" android:title="Lugares" android:icon="@android:drawable/ic_menu_compass" />
+    <item android:id="@+id/nav_offline" android:title="Modo Offline" android:icon="@android:drawable/ic_menu_close_clear_cancel" />
+</menu>

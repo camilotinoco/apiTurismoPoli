@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvItinerarioTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Itinerario"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvItinerarioContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Día 1: Llegada a Cartagena\n• Día 2: Visita a la ciudad amurallada\n• Día 3: Playas y excursiones\n• Día 4: Vuelo a Medellín\n• Día 5: Recorrido cultural"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+</ScrollView>

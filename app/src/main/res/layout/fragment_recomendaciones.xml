@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recomendaciones de Viaje"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✔ Llevar siempre bloqueador solar y sombrero.\n\n✔ Mantener documentos y copias digitales.\n\n✔ Probar la gastronomía local con precaución.\n\n✔ Usar transporte autorizado para mayor seguridad.\n\n✔ Respetar las costumbres y el medio ambiente en cada destino."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+</ScrollView>

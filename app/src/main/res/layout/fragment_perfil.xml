@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo  -->
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="Logo empresa"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"/>
+
+        <!-- Nombre de la empresa -->
+        <TextView
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GuíaTur Adventure S.A.S"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Eslogan -->
+        <TextView
+            android:id="@+id/txt_eslogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explora, descubre y vive nuevas experiencias"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Sección: Acerca de nosotros -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acerca de nosotros"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/txt_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Somos una empresa especializada en turismo cultural y de aventura. Ofrecemos experiencias guiadas en destinos nacionales e internacionales, con un enfoque en sostenibilidad y seguridad."
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección: Servicios -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicios"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Tours guiados en ciudades principales\n• Paquetes de aventura (senderismo, rafting, ciclismo)\n• Reservas de alojamiento y transporte\n• Asesoría personalizada para viajes en grupo o corporativos"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección: Contacto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacto"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/txt_contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Bogotá, Colombia\n📧 info@guiatur.com\n📞 +57 300 123 4567"/>
+    </LinearLayout>
+</ScrollView>
