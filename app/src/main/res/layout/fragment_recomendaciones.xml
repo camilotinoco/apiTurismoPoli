@@ -22,6 +22,37 @@
             android:layout_height="wrap_content"
             android:text="✔ Llevar siempre bloqueador solar y sombrero.\n\n✔ Mantener documentos y copias digitales.\n\n✔ Probar la gastronomía local con precaución.\n\n✔ Usar transporte autorizado para mayor seguridad.\n\n✔ Respetar las costumbres y el medio ambiente en cada destino."
             android:textSize="16sp"
-            android:lineSpacingExtra="4dp"/>
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 🔹 Sección para cargar una página web -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explora una página web de viajes:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe una URL (ej: www.colombia.travel)"
+            android:inputType="textUri"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonCargar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargar página"
+            android:layout_marginBottom="8dp"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="8dp" />
     </LinearLayout>
 </ScrollView>

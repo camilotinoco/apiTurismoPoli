@@ -1,90 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
-        <!-- Logo  -->
+        <!-- Foto de perfil circular -->
         <ImageView
-            android:id="@+id/img_logo"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_gravity="center"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="Logo empresa"
+            android:id="@+id/img_perfil"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:scaleType="centerCrop"/>
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto de perfil" />
 
-        <!-- Nombre de la empresa -->
+        <!-- Nombre -->
         <TextView
             android:id="@+id/txt_nombre"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GuíaTur Adventure S.A.S"
+            android:text="María García"
+            android:textSize="24sp"
             android:textStyle="bold"
-            android:textSize="22sp"
-            android:gravity="center"
-            android:layout_marginBottom="8dp"/>
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
 
-        <!-- Eslogan -->
+        <!-- Profesión -->
         <TextView
-            android:id="@+id/txt_eslogan"
-            android:layout_width="match_parent"
+            android:id="@+id/txt_profesion"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Explora, descubre y vive nuevas experiencias"
+            android:text="Guía Turística Profesional"
             android:textSize="16sp"
-            android:gravity="center"
-            android:layout_marginBottom="20dp"/>
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp" />
 
-        <!-- Sección: Acerca de nosotros -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Acerca de nosotros"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp"/>
+        <!-- Línea divisora -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/txt_descripcion"
+        <!-- Sección Estudios -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Somos una empresa especializada en turismo cultural y de aventura. Ofrecemos experiencias guiadas en destinos nacionales e internacionales, con un enfoque en sostenibilidad y seguridad."
-            android:layout_marginBottom="16dp"/>
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
 
-        <!-- Sección: Servicios -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Servicios"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📚 Estudios"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF6B35"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
+            <TextView
+                android:id="@+id/txt_estudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Licenciatura en Turismo - Universidad Nacional\n\n• Certificación en Guía Turística Internacional\n\n• Diplomado en Gestión de Destinos Turísticos\n\n• Curso de Historia y Cultura Colombiana"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- Línea divisora -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sección Experiencia -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Tours guiados en ciudades principales\n• Paquetes de aventura (senderismo, rafting, ciclismo)\n• Reservas de alojamiento y transporte\n• Asesoría personalizada para viajes en grupo o corporativos"
-            android:layout_marginBottom="16dp"/>
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
 
-        <!-- Sección: Contacto -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contacto"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💼 Experiencia en Viajes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF6B35"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/txt_contacto"
+            <TextView
+                android:id="@+id/txt_experiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Con más de 8 años de experiencia como guía turística, he tenido el privilegio de explorar y compartir la belleza de Colombia y el mundo.\n\n🌎 Países visitados: 25 países en 4 continentes\n\n✈️ Tours realizados: Más de 500 tours exitosos\n\n⭐ Especialidades:\n- Turismo cultural y patrimonial\n- Ecoturismo y aventura\n- Gastronomía local\n- Fotografía de viajes\n\n📍 Destinos favoritos: Cartagena, San Andrés, Eje Cafetero, Bogotá, Santa Marta"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- Línea divisora -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sección Idiomas -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="📍 Bogotá, Colombia\n📧 info@guiatur.com\n📞 +57 300 123 4567"/>
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🗣️ Idiomas"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF6B35"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txt_idiomas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Español (Nativo)\n• Inglés (Avanzado - C1)\n• Francés (Intermedio - B2)\n• Portugués (Básico - A2)"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- Contacto -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📧 Contacto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF6B35"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: maria.garcia@guiaturismo.com\nTeléfono: +57 300 123 4567"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

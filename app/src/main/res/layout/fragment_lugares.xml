@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lugares Recomendados"
+            android:text="Lugares Recomendados en Cartagena"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_marginBottom="12dp" />
@@ -20,8 +20,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Cartagena de Indias\n• Medellín\n• San Andrés\n• Villa de Leyva\n• Tayrona"
+            android:text="• Ciudad Amurallada\n• Castillo de San Felipe de Barajas\n• Playa Blanca\n• Islas del Rosario\n• Cerro de La Popa\n• Getsemaní\n• Museo del Oro Zenú"
             android:textSize="16sp"
-            android:lineSpacingExtra="4dp"/>
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 🎥 Video con controles -->
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
     </LinearLayout>
 </ScrollView>
